@@ -1,0 +1,328 @@
+
+body{
+  background-color:  antiquewhite;
+  padding: 20px;
+}
+.bg{
+  margin: auto;
+  background-color:aliceblue;
+  padding: 20px;
+  width: 85%;
+  height: 95%;
+  color: rgb(102, 99, 99);
+  -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+.pricing{
+  
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+
+}
+.switch-button {
+  background-color:cornflowerblue ;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 240px;
+  color:darkslategray;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1px;
+  position: relative;
+  padding-right: 120px;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+  .switch-button:before {
+    content: "Monthly";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  .switch-button-checkbox {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+  }
+    .switch-button-checkbox:checked + .switch-button-label:before {
+      transform: translateX(120px);
+      transition: transform 300ms linear;
+    }
+
+    .switch-button-checkbox + .switch-button-label {
+      position: relative;
+      padding: 10px 0;
+      display: block;
+      user-select: none;
+      pointer-events: none;
+    }
+      .switch-button-checkbox + .switch-button-label:before {
+        content: "";
+        background-color: darkturquoise;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 30px;
+        transform: translateX(0);
+        transition: transform 300ms;
+      }
+
+      .switch-button-label-span {
+        position: relative;
+      }
+
+      
+[type=radio] {
+  display: none;
+}
+
+#slider {
+  margin: 30px;
+  perspective: inherit;
+  transform-style: preserve-3d;
+}
+
+#slider label {
+  margin: auto;
+  border-radius: 15px;
+  position: absolute;
+  left: 0; right: 0;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2{
+  box-shadow: 0 6px 10px 0 rgb(0,0,0), 0 2px 2px 0 rgba(0,0,0,1);
+  transform: translate3d(-15%,0,-100px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3 {
+  box-shadow: 0 13px 25px 0 rgba(100, 149, 237, 1), 0 11px 7px 0 rgba(0,0,0,1);
+  transform: translate3d(0,0,0);
+  background-color: rgb(100, 149, 237) ;
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide1{
+  box-shadow: 0 6px 10px 0 rgb(0,0,0), 0 2px 2px 0 rgba(0,0,0,1);
+  transform: translate3d(15%,0,-100px);
+}
+.card-slider {
+  background:rgb(199, 208, 236);
+  width: 400px;
+  height: 480px;
+  text-align: center;
+  color:aliceblue;
+  padding: 20px;
+}
+
+.master{
+  margin-top: 10px;
+
+}
+h4{
+  border-bottom: 0.5px solid aliceblue;
+  padding: 2px;
+}
+h2{
+  margin: 20px!important;
+}
+h1{
+  font-size: 40px!important;
+}
+.btn{
+  width: 50%;
+  
+  border-radius: 50px!important;
+}
+@media only screen and (max-device-width: 600px) {
+  
+body{
+  background-color:black;
+  padding: 1px;
+}
+
+.bg{
+  margin: auto;
+  background-color:aliceblue;
+  padding: 0.5px;
+  width: 95%;
+  height: 98%;
+  color: rgb(102, 99, 99);
+}
+
+.pricing{
+  margin-top: 120px;
+  font-weight: bold;
+  font-size:100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+.switch-button {
+  background-color:cornflowerblue ;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+  overflow: hidden;
+  width: 350px;
+  color:aliceblue;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 1px;
+  position: relative;
+  padding-right: 160px;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+  .switch-button:before {
+    content: "Monthly";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  .switch-button-checkbox {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+  }
+    .switch-button-checkbox:checked + .switch-button-label:before {
+      transform: translateX(180px);
+      transition: transform 300ms linear;
+    }
+
+    .switch-button-checkbox + .switch-button-label {
+      position: relative;
+      padding: 15px 0;
+      display: block;
+      user-select: none;
+      pointer-events: none;
+    }
+      .switch-button-checkbox + .switch-button-label:before {
+        content: "";
+        background-color: darkturquoise;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 30px;
+        transform: translateX(0);
+        transition: transform 300ms;
+      }
+
+      .switch-button-label-span {
+        position: relative;
+      }
+
+#slider {
+        margin: 20px;
+        perspective: inherit;
+        transform-style: preserve-3d;
+      }
+      
+      #slider label {
+        margin: auto; 
+        border-radius: 15px;
+        position: absolute;
+        left: 0; right: 0;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+      }
+      
+      #s1:checked ~ #slide3, #s2:checked ~ #slide1,
+      #s3:checked ~ #slide2{
+        box-shadow: 0 6px 10px 0 rgb(0,0,0), 0 2px 2px 0 rgba(0,0,0,1);
+        transform: translate3d(-15%,0,-100px);
+      }
+      
+      #s1:checked ~ #slide1, #s2:checked ~ #slide2,
+      #s3:checked ~ #slide3 {
+        box-shadow: 0 13px 25px 0 rgba(100, 149, 237, 1), 0 11px 7px 0 rgba(0,0,0,1);
+        transform: translate3d(0,0,0);
+        background-color: rgb(100, 149, 237) ;
+      }
+      
+      #s1:checked ~ #slide2, #s2:checked ~ #slide3,
+      #s3:checked ~ #slide1{
+        box-shadow: 0 6px 10px 0 rgb(0,0,0), 0 2px 2px 0 rgba(0,0,0,1);
+        transform: translate3d(15%,0,-100px);
+      }
+      .card-slider {
+        top: 90px;
+        background:rgb(199, 208, 236);
+        width: 78%;
+        height: 1200px;
+        text-align: center;
+        color:aliceblue;
+        padding: 2px;
+      }
+      
+      
+ 
+.master{
+  margin:30px;
+}
+h2{
+  font-size: 70px!important;
+  margin-top: 80px!important;
+}
+h1{
+  font-size: 90px !important;
+  margin-top: 60px!important;
+}
+h4{
+  border-bottom: 0.5px solid aliceblue;
+  font-size: 50px !important;
+  margin-top: 40px!important;
+  margin-bottom: 40px!important;
+  padding: 2px;
+}
+.btn{
+  width: 450px;
+  height: 100px;
+  margin-top: 40px!important;
+  border-radius: 50px!important;
+  font-size: 40px!important;
+}
+}
